@@ -1,0 +1,251 @@
+{
+    "id": "5eaf6539-b0a8-498f-834e-20fdb3747fac",
+    "created_at": "2025-03-24T16:22:19Z",
+    "update_at": "2025-03-24T16:27:55Z",
+    "global_timeout": 120,
+    "tunnel_name": "",
+    "start_time": "2025-03-24T16:24:14Z",
+    "end_time": "2025-03-24T16:27:55Z",
+    "summary": {
+        "total_time": 221000000000,
+        "execution_time": 221000000000,
+        "total_tasks": 4,
+        "build_time_consumed": 434000000000,
+        "jobTestExecutionTime": "0s",
+        "failed_tasks": 0,
+        "total_stage_info": {
+            "postrun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 4
+            },
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 4
+            },
+            "scenario": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 4
+            }
+        },
+        "status": "completed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=5eaf6539-b0a8-498f-834e-20fdb3747fac"
+    },
+    "tasks": [
+        {
+            "id": "0e80f09d-d8d5-4284-a0c1-0340fb22f1a1",
+            "os": "win",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2025-03-24T16:24:13Z",
+            "update_at": "2025-03-24T16:26:54Z",
+            "start_time": "2025-03-24T16:24:14Z",
+            "end_time": "2025-03-24T16:26:54Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "74bf03b6-b6ef-429c-9e9a-6819f4129045",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-03-24T16:24:47Z",
+                    "started_at": "2025-03-24T16:24:47Z",
+                    "updated_at": "2025-03-24T16:26:22Z",
+                    "order": 2,
+                    "task_number": 1
+                },
+                {
+                    "id": "58f92852-7ad9-4d44-b9af-a36f89000694",
+                    "type": "scenario",
+                    "status": "completed",
+                    "name": "dotnet test",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-03-24T16:26:22Z",
+                    "started_at": "2025-03-24T16:26:24Z",
+                    "updated_at": "2025-03-24T16:26:51Z",
+                    "order": 3,
+                    "task_number": 1
+                },
+                {
+                    "id": "de835430-c011-4fe1-a27a-b30b74ff4092",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2025-03-24T16:26:22Z",
+                    "started_at": "2025-03-24T16:26:51Z",
+                    "updated_at": "2025-03-24T16:26:51Z",
+                    "order": 4,
+                    "task_number": 1
+                }
+            ]
+        },
+        {
+            "id": "45d42e8b-7d11-44f0-92a0-f57d70f9bc15",
+            "os": "win",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2025-03-24T16:24:13Z",
+            "update_at": "2025-03-24T16:26:38Z",
+            "start_time": "2025-03-24T16:24:14Z",
+            "end_time": "2025-03-24T16:26:38Z",
+            "group_number": 2,
+            "stages": [
+                {
+                    "id": "d9ac9ec1-f861-4133-98d9-bd4371b67db0",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-03-24T16:24:47Z",
+                    "started_at": "2025-03-24T16:24:47Z",
+                    "updated_at": "2025-03-24T16:26:06Z",
+                    "order": 2,
+                    "task_number": 2
+                },
+                {
+                    "id": "62c616a0-67c1-4900-844f-dd66b696a726",
+                    "type": "scenario",
+                    "status": "completed",
+                    "name": "dotnet test",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-03-24T16:26:06Z",
+                    "started_at": "2025-03-24T16:26:08Z",
+                    "updated_at": "2025-03-24T16:26:35Z",
+                    "order": 3,
+                    "task_number": 2
+                },
+                {
+                    "id": "e200bb3b-de63-4717-a7d5-8f9297dc9601",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2025-03-24T16:26:06Z",
+                    "started_at": "2025-03-24T16:26:35Z",
+                    "updated_at": "2025-03-24T16:26:35Z",
+                    "order": 4,
+                    "task_number": 2
+                }
+            ]
+        },
+        {
+            "id": "3ec59ac0-0606-4715-a23a-46568bf95a2a",
+            "os": "linux",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2025-03-24T16:24:13Z",
+            "update_at": "2025-03-24T16:27:48Z",
+            "start_time": "2025-03-24T16:26:39Z",
+            "end_time": "2025-03-24T16:27:48Z",
+            "group_number": 3,
+            "stages": [
+                {
+                    "id": "5b1848cf-fa2b-47eb-9d30-c4289043f73e",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-03-24T16:26:53Z",
+                    "started_at": "2025-03-24T16:26:53Z",
+                    "updated_at": "2025-03-24T16:27:23Z",
+                    "order": 2,
+                    "task_number": 3
+                },
+                {
+                    "id": "7a1ef700-0a4d-49ff-ba22-8f7b8ee10633",
+                    "type": "scenario",
+                    "status": "completed",
+                    "name": "dotnet test",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-03-24T16:27:23Z",
+                    "started_at": "2025-03-24T16:27:24Z",
+                    "updated_at": "2025-03-24T16:27:46Z",
+                    "order": 3,
+                    "task_number": 3
+                },
+                {
+                    "id": "19c78c9a-2a99-4560-bfb7-24e8c547337a",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2025-03-24T16:27:23Z",
+                    "started_at": "2025-03-24T16:27:46Z",
+                    "updated_at": "2025-03-24T16:27:46Z",
+                    "order": 4,
+                    "task_number": 3
+                }
+            ]
+        },
+        {
+            "id": "f6f3fbc2-3501-405b-8c55-ae3e62dca38b",
+            "os": "linux",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2025-03-24T16:24:13Z",
+            "update_at": "2025-03-24T16:27:55Z",
+            "start_time": "2025-03-24T16:26:54Z",
+            "end_time": "2025-03-24T16:27:55Z",
+            "group_number": 4,
+            "stages": [
+                {
+                    "id": "3875396b-08a0-4989-b670-79686d33a623",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-03-24T16:27:08Z",
+                    "started_at": "2025-03-24T16:27:08Z",
+                    "updated_at": "2025-03-24T16:27:27Z",
+                    "order": 2,
+                    "task_number": 4
+                },
+                {
+                    "id": "4666c58e-b803-4865-9c4f-0eeecb6c9570",
+                    "type": "scenario",
+                    "status": "completed",
+                    "name": "dotnet test",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-03-24T16:27:27Z",
+                    "started_at": "2025-03-24T16:27:29Z",
+                    "updated_at": "2025-03-24T16:27:53Z",
+                    "order": 3,
+                    "task_number": 4
+                },
+                {
+                    "id": "1530beae-e1e4-4250-9e25-0d5bf0001195",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2025-03-24T16:27:27Z",
+                    "started_at": "2025-03-24T16:27:53Z",
+                    "updated_at": "2025-03-24T16:27:53Z",
+                    "order": 4,
+                    "task_number": 4
+                }
+            ]
+        }
+    ],
+    "test_ids": null
+}

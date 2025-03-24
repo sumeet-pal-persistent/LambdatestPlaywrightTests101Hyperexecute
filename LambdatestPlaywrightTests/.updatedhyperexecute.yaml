@@ -1,0 +1,178 @@
+accessibilityJob: false
+alwaysRunPostSteps: false
+appium: null
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+cacheKey: '{{ checksum "packages.txt" }}'
+captureScreenRecordingForScenarios: false
+codeDirectory: LambdatestPlaywrightTests
+collectLocalGitData: true
+combineTasksInMatrixMode: false
+concurrency: 3
+cypress: false
+differentialUpload:
+    enabled: false
+    forcedDisabled: false
+    ttlHours: null
+dynamicAllocation: false
+errorCategorizedOnFailureOnly: false
+framework:
+    additional_args: null
+    args:
+        appId: ""
+        appPath: ""
+        artifacts: false
+        avoidAppLaunch: false
+        customData: {}
+        deviceSelectionStrategy: ""
+        devices: []
+        disableReleaseDevice: false
+        filters:
+            attributes: []
+        fixedIP: ""
+        isRealMobile: null
+        isVirtualDevice: false
+        language: ""
+        locale: ""
+        minorOsVersion: false
+        mitmProxy: false
+        mobileDC: null
+        networkHar: false
+        otherApps: []
+        platformName: ""
+        playwrightRD: false
+        preservedDevice: false
+        queueTimeout: 0
+        resignApp: true
+        shards:
+            mappings: []
+        skipInstall: false
+        skipUninstallPreviousBuild: false
+        skipXMLOnRun: false
+        testSuiteAppId: ""
+        testSuitePath: ""
+        uninstallPreviousBuild: false
+        xcTestPlanId: ""
+        xcTestPlanPath: ""
+    baseCommand: ""
+    defaultReports: false
+    discoveryFlags: []
+    discoveryMode: ""
+    discoveryType: ""
+    downloadURL: ""
+    flags: []
+    isTestNGXMLSuite: false
+    licenseKey: ""
+    name: ""
+    runnerFlags: []
+    toscaArgs: null
+    userdefinediscovery: false
+    version: ""
+    workingDirectory: ""
+globalPost:
+    commands: []
+    completed: false
+    mode: ""
+    runson: ""
+    shell: ""
+    workingDirectory: ""
+globalPre:
+    cache: false
+    commands: []
+    completed: false
+    location: ""
+    maxRetries: 0
+    mode: ""
+    runson: ""
+    shell: ""
+    type: ""
+    workingDirectory: ""
+globalTimeout: 120
+jobID: 5eaf6539-b0a8-498f-834e-20fdb3747fac
+jobLabel:
+    - hybrid-mode
+key: hD5T3Y76XOujSdIHQmYsyuco3OviJHTYdYq6cHHfFFfLOyFix9
+localHTTPProxy: ""
+matrix:
+    browser:
+        - Chrome
+        - Edge
+    files:
+        - PlaywrightTests.cs
+    os:
+        - win
+        - linux
+maxRetries: 1
+maxRetriesPreSteps: 0
+mergeArtifacts: true
+meta: {}
+platformConfig: null
+post:
+    - cat yaml/dotnet_playwright_hyperexecute_autosplit_sample.yaml
+postDirectives:
+    commands:
+        - cat yaml/dotnet_playwright_hyperexecute_autosplit_sample.yaml
+    shell: ""
+    workingDirectory: ""
+pre:
+    - npm install playwright@1.50.0 --save-exact
+    - nuget locals all -clear
+    - dotnet build -c Release
+preDirectives:
+    commands:
+        - npm install playwright@1.50.0 --save-exact
+        - nuget locals all -clear
+        - dotnet build -c Release
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+project:
+    id: ""
+    name: ""
+    type: default
+projectpath: ""
+regionConfig:
+    storage:
+        enabled: false
+        name: ""
+        platform: azure
+        region: ""
+    vm: []
+report: true
+retryOnFailure: true
+runson: ${matrix.os}
+runtime:
+    language: dotnet
+    version: 8.0.407
+    addons: []
+    opts: {}
+slackChannel: ""
+sourcePayload:
+    verifySSL: true
+storageType: ""
+testDiscovery:
+    command: grep -lr 'GotoAsync' -ir --include=*.cs
+    mode: dynamic
+    type: raw
+testDiscoveryResultV3: []
+testSuiteStep: 120
+testSuiteTimeout: 120
+testSuites:
+    - dotnet test
+testType: playwright
+triggerMode: false
+tunnelOpts:
+    testsPerTunnel: 10
+unzipPayload: false
+uploadArtefacts:
+    - email:
+        linkValidity: 0
+        metaInfo: []
+        to: []
+      name: Reports
+      path:
+        - Reports/**
+user: sumeet_pal
+version: "0.1"
+waitForArtefactsUpload: false
+whiteLabelProductTag: ""
