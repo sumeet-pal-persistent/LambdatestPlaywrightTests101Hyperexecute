@@ -18,13 +18,8 @@ matrix:
 environment:
     - BROWSER: ${{ matrix.browser }} 
     - OS: ${{ matrix.os }}  
-#env:
- #   NUGET_PACKAGES: 'C:\nuget_global_cache'
- #   NUGET_HTTP_CACHE_PATH: 'C:\nuget_http_cache'
-#    NUGET_PLUGINS_CACHE_PATH: 'C:\nuget_plugins_cache'
 pre:
     - 'npm install playwright@1.50.0 --save-exact'
-    #- 'dotnet list LambdatestPlaywrightTests.csproj package > packages.txt'
     - 'nuget locals all -clear'
     - 'dotnet build -c Release'
 cacheKey: '{{ checksum "packages.txt" }}'
