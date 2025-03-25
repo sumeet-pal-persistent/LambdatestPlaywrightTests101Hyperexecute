@@ -9,6 +9,6 @@ Extent repports 5.04
 
  Command to run test from powershell
 1. Open powershell and navigate to project folder
-cd <project path>
+cd 'project path'
 2. run below command
-.\hyperexecute.exe --user <from secret> --key <from secret> --config hyperexecute.yaml
+.\hyperexecute.exe --user 'from secret' --key 'from secret' --config hyperexecute.yaml
