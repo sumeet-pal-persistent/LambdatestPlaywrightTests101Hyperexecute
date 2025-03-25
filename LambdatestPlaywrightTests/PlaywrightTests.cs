@@ -47,8 +47,8 @@ namespace LambdatestPlaywrightTests
         public async Task Setup()
         {
             string user, accessKey;
-            user = "sumeet_palhotmail";
-            accessKey = "LT_XYpMDieuAk9lCgAJsdvCJGiJbe7pmg0MXnev95xmI5LQoqy";
+            user = "sumeet";
+            accessKey = "LT_XYpMDieuA";
 
             Dictionary<string, object> capabilities = new Dictionary<string, object>();
             Dictionary<string, string> ltOptions = new Dictionary<string, string>();
